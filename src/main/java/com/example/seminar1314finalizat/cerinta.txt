@@ -1,0 +1,25 @@
+Entitati:
+Waiter
+ - name: string
+Table
+ - number: int
+MenuItem
+ - price: float
+ - preparationTimeInMinutes: short
+Order
+ - date: LocalDateTime
+ - items: Map<MenuItem, Int>
+ - waiter: Waiter
+ - table: Table
+
+1. Read the tables from DB and open a window for each of them.
+Each window will display the table number
+Read the waiters from DB and open a window for each of them.
+Each window will display the name of the waiter
+2. From each Table window, the user can choose to order by pressing a button. At that moment all Waiter windows will get a notification and any Waiter can choose to accept it.
+Once the Order has been accepted all notifications will disappear.
+3. When placing an Order the Table window will receive a notification with the estimated time of preparation. This is computed as the maximum of all items' estimated time.
+4. When the estimated preparation time for a Table expires the associated Waiter window will get a notification that he needs to get the Order from the kitchen.
+5. When the client asks for the check by pressing a button, the window will display the total price.
+6. Each Waiter can input a date to view a summary report of his Orders from that day.
+7. Clients can press a button to see the top 5 most ordered items.

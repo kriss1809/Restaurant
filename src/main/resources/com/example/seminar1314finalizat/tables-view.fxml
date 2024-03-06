@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="380.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seminar1314finalizat.controller.TablesController">
+   <children>
+      <Label fx:id="label_nr" alignment="CENTER" layoutX="-6.0" layoutY="6.0" prefHeight="18.0" prefWidth="600.0" text="Masa cu numărul: " textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9cb5cc" height="100.0" layoutX="91.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4c6d7" height="50.0" layoutX="115.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4c6d7" height="50.0" layoutX="115.0" layoutY="252.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4c6d7" height="50.0" layoutX="202.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4c6d7" height="50.0" layoutX="29.0" layoutY="172.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Button fx:id="btn_order" layoutX="329.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleUserPanelClicks" prefHeight="26.0" prefWidth="189.0" text="Plasează comanda" />
+      <Button fx:id="btn_check_bill" layoutX="329.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleUserPanelClicks" prefHeight="26.0" prefWidth="190.0" text="Vezi nota de plată" />
+      <Button fx:id="btn_top5" layoutX="330.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleUserPanelClicks" prefHeight="26.0" prefWidth="190.0" text="Top 5 preparate din meniu" />
+      <TableView fx:id="tableview_meniu" layoutX="284.0" layoutY="51.0" prefHeight="191.0" prefWidth="272.0">
+        <columns>
+          <TableColumn fx:id="tbl_col_item" prefWidth="163.0" text="Preparat" />
+            <TableColumn fx:id="tbl_col_price" prefWidth="109.0" text="Preț" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

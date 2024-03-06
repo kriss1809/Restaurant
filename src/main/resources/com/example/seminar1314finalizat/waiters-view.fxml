@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="201.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seminar1314finalizat.controller.WaitersController">
+   <children>
+      <TableView fx:id="tbl_orders" layoutX="14.0" layoutY="15.0" prefHeight="169.0" prefWidth="207.0">
+        <columns>
+          <TableColumn fx:id="tbl_col_nr" prefWidth="92.2000150680542" text="Nr. masa" />
+          <TableColumn fx:id="tbl_col_actions" prefWidth="113.0" text="Actiuni" />
+        </columns>
+      </TableView>
+      <Label fx:id="label_nume" alignment="CENTER" layoutX="236.0" layoutY="21.0" prefHeight="30.0" prefWidth="363.0" text="NUME:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="data_aleasa" layoutX="242.0" layoutY="79.0" prefHeight="26.0" prefWidth="349.0" />
+      <Button fx:id="raport_comenzi" layoutX="242.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleUserPanelClicks" prefHeight="26.0" prefWidth="350.0" text="Vezi raport comenzi preluate" />
+   </children>
+</AnchorPane>
